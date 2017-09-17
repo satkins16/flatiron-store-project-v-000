@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
 
+  resources :order_items
+
+  resources :orders
+
+  devise_for :users
   root 'store#index', as: 'store'
 
   resources :items, only: [:show, :index]
