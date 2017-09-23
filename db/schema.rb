@@ -11,10 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170921235825) do
+ActiveRecord::Schema.define(version: 20170923185807) do
 
   create_table "carts", force: :cascade do |t|
     t.integer "user_id"
+    t.string  "status",  default: "not submitted"
   end
 
   create_table "categories", force: :cascade do |t|
