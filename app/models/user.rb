@@ -13,9 +13,5 @@ class User < ActiveRecord::Base
     save
   end
 
-  def current_cart
-    cart = Cart.find(self.current_cart_id)
-    cart
-  end
 
 end
